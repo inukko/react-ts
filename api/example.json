@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "TEST"
+    },
+    {
+      "id": 2,
+      "title": "sample",
+      "author": "Johnny"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../adapter';
 
 import Label from '../components/Label';
 
