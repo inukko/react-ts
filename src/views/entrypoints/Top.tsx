@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Top = () => <div>TOP</div>;
+import Label from '../components/Label';
+
+const Top = () => <Label />;
 
 export default Top;
