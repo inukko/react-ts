@@ -1,8 +1,6 @@
 import React from 'react';
-import '../../adapter';
+import TopAssemble from '../../assemble/Top';
 
-import Label from '../components/Label';
-
-const Top = () => <Label />;
+const Top: React.FC = () => <TopAssemble />;
 
 export default Top;
