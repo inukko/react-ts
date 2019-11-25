@@ -1,8 +1,19 @@
 import React from 'react';
 
-const Label: React.FC = ({ state }: any): any => {
-  console.log(state);
-  return <div />;
+interface IfLabel {
+  id: number;
+  title: string;
+  author: string;
+}
+
+const Label = ({ id, title, author }: IfLabel): JSX.Element => {
+  return (
+    <ul>
+      <li>{id}</li>
+      <li>{title}</li>
+      <li>{author}</li>
+    </ul>
+  );
 };
 
 export default Label;

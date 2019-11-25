@@ -1,8 +1,14 @@
 import UseCase from '../usecase';
 import { useEffect, useState } from 'react';
 
-export const effected = (): any => {
-  const [data, setData] = useState();
+interface IfEffected {
+  id: number;
+  title: string;
+  author: string;
+}
+
+export const Effected = (): IfEffected | null => {
+  const [data, setData] = useState(null);
 
   const getData = async (): Promise<void> => {
     const usecase = new UseCase();
@@ -17,3 +23,5 @@ export const effected = (): any => {
 
   return data;
 };
+
+export default Effected;

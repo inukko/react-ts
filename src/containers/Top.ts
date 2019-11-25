@@ -1,9 +1,19 @@
-import { effected } from '../effects';
+import { Effected } from '../effects';
 
-const TopContainer = (): any => {
-  const states = effected();
+export interface IfTopContainer {
+  state: {
+    id: number;
+    title: string;
+    author: string;
+  } | null;
+}
+
+const TopContainer = (): IfTopContainer => {
+  const state = Effected();
+
+  console.log(state);
   return {
-    state: states,
+    state,
   };
 };
 
