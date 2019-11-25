@@ -11,7 +11,6 @@ export interface IfTopContainer {
 const TopContainer = (): IfTopContainer => {
   const state = Effected();
 
-  console.log(state);
   return {
     state,
   };
