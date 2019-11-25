@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./config/webpack.config.js --mode development",
     "lint": "eslint --fix --ext [.ts,.tsx] ./src",
-    "server": "json-server --watch ./api/example.json --port 8080"
+    "server": "json-server --watch ./api/example.json --port 3000"
   },
   "keywords": [],
   "author": "",
