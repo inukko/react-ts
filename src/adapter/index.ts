@@ -1,5 +1,5 @@
 import fetch from 'unfetch';
-import { entrypoints } from './entrypoints';
+import {entrypoints} from './entrypoints';
 
 export default class Adapter {
   private checkStatus(response: any): any {
