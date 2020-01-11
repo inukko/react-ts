@@ -1,4 +1,5 @@
 import fetch from 'unfetch';
+import { entrypoints } from './entrypoints';
 
 export default class Adapter {
   private checkStatus(response: any): any {
@@ -11,7 +12,7 @@ export default class Adapter {
   }
 
   public async fetchData(): Promise<any> {
-    const result = await fetch('http://localhost:3000/articles')
+    const result = await fetch(entrypoints('articles'))
       .then(response => {
         try {
           this.checkStatus(response);
